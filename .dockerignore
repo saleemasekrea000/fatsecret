@@ -4,6 +4,8 @@
 *.pyo
 *.pyd
 
+fat/
+
 # FastAPI server logs
 *.log
 
@@ -12,18 +14,9 @@
 .idea/
 *.swp
 
-# Temporary files
-*.bak
-*.tmp
-*.swp
-
-# Environments
+# Environment files and folders
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+.venv/
 
-.vscode/
+# MD files
+*.md

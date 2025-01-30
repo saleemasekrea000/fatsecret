@@ -5,10 +5,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings(BaseSettings):
-    CLIENT_ID: str 
-    CLIENT_SECRET: str
-    REDIRECT_URI: str 
-    FATSECRET_URL: str = "https://platform.fatsecret.com/rest/foods/search/v3"
-    TOKEN_URL: str = "https://platform.fatsecret.com/oauth/token"
-    
+    client_id: str
+    client_secret: str
+    fatsecret_url: str = "https://platform.fatsecret.com/rest/server.api"
+    fatsecret_auth_url: str = "https://platform.fatsecret.com/oauth/authenticate"
+    access_token_url: str = "https://oauth.fatsecret.com/connect/token"
+    grant_type:str = "client_credentials" 
+
 settings = Settings()
