@@ -1,9 +1,9 @@
 ## how to run
 
 ```bash 
-sudo docker-compose build
+docker build -t fatsecret .
 ```
 
 ```bash 
-sudo docker-compose up
+docker run -it fatsecret
 ```
